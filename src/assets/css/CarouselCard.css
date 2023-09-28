@@ -1,0 +1,4 @@
+#root > div > div.body-main > div > div.col.w-full.sm\:w-\[70vw\].h-\[350px\].px-8.py-6 > div > div.carousel.carousel-slider > p
+{
+    display: none;
+}
