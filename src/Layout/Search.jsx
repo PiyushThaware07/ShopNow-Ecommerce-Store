@@ -1,11 +1,22 @@
 import React, { useEffect, useState } from 'react';
+
+// Components
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+
+// React Router DOM
 import { Link, useParams } from 'react-router-dom';
+
+// Images
 import loadingGIF from '../assets/loading.gif';
+
+// Redux
 import { useDispatch, useSelector } from 'react-redux';
 
+// Icons
 import { GiClothes } from "react-icons/gi";
+
+
 
 export default function Search() {
     const dispatch = useDispatch();

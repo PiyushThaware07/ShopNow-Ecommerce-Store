@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react';
 
+// Components
 import ProductItem from './ProductItem';
+
+// Images
 import loadingGif from '../assets/loading.gif';
 
+// Redux
 import { useDispatch, useSelector } from 'react-redux';
-import { removeSelectedProduct, setProducts } from '../Redux/Slices/productSlice';
+import { setProducts } from '../Redux/Slices/productSlice';
 
 
 export default function MultipleProducts() {

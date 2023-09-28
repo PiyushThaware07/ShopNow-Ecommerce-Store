@@ -7,7 +7,7 @@ import { BsCartPlusFill,  BsCheckCircleFill } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../Redux/Slices/cartSlice';
 
-// Compoennets
+// React Router DOM
 import { Link } from 'react-router-dom';
 
 

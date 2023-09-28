@@ -1,11 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { AiFillStar } from "react-icons/ai";
-// import { ImShare2 } from "react-icons/im";
+
+// Compoennets
 import Navbar from './Components/Navbar'; // Make sure the path to your Navbar component is correct
 import Footer from './Components/Footer';
+
+
+// React Router DOM
+import { useParams } from 'react-router-dom';
+
+
+// Icons
+import { AiFillStar } from "react-icons/ai";
+
+// Redux
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../Redux/Slices/cartSlice';
+
+// Images
 import loadingGif from '../assets/loading.gif';
 
 export default function ProductDetail() {
@@ -19,7 +30,6 @@ export default function ProductDetail() {
                 const url = `https://fakestoreapi.com/products/${id}`;
                 const response = await fetch(url);
                 const data = await response.json();
-                console.log("Product fetch:", data);
                 setDetails(data);
                 setLoading(false); // Set loading to false when data is fetched
             } catch (error) {

@@ -8,10 +8,8 @@ import Footer from './Components/Footer';
 // React Router DOM
 import { Link, useParams } from 'react-router-dom';
 
-
 // Loading GIF
-import loadingGIF from '../assets/loading.gif'
-import { useSelector } from 'react-redux';
+import loadingGIF from '../assets/loading.gif';
 
 
 export default function CategoryList() {

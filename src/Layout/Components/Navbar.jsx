@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+
+// Icons
 import { CiShoppingBasket } from "react-icons/ci";
 import { GoSearch } from "react-icons/go";
 import { PiUserCircleLight } from "react-icons/pi";
 import { IoIosLogOut } from "react-icons/io";
 import { FaLinode } from "react-icons/fa";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+
+
+// React Router DOM
 import { Link, useNavigate } from 'react-router-dom';
 
 

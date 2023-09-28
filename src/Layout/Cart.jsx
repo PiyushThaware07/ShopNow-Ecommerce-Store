@@ -2,24 +2,26 @@ import React from 'react';
 // Components
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+
 // Icons
 import { RiArrowLeftFill } from "react-icons/ri";
 import { FaCirclePlus, FaCircleMinus } from "react-icons/fa6";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import { CiCircleRemove } from "react-icons/ci";
 import { PiShoppingCartDuotone } from "react-icons/pi";
+
 // React Router Dom
 import { Link, useNavigate } from 'react-router-dom';
 
 // Redux
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart, incrementCartQuantity, decrementCartQuantity, clearCart } from '../Redux/Slices/cartSlice';
+
 // Auth0
 import { useAuth0 } from "@auth0/auth0-react";
 
 export default function CartPage() {
   const { cartArray, totalPrice, totalQuantity } = useSelector((state) => state.cartSlice);
-  console.log("=======", cartArray);
 
   const dispatch = useDispatch();
 
@@ -84,7 +86,7 @@ export default function CartPage() {
                                 </button>
                               </div>
                               <button className="mt-0 sm:mt-6 text-red-500 hover:text-red-700 hidden sm:inline" onClick={() => dispatch(removeFromCart(product))}>Remove</button>
-                              <button className="mt-0 sm:mt-6 text-red-500 hover:text-red-700 ms-auto inline sm:hidden"><CiCircleRemove size={30} /></button>
+                              <button className="mt-0 sm:mt-6 text-red-500 hover:text-red-700 ms-auto inline sm:hidden" onClick={() => dispatch(removeFromCart(product))}><CiCircleRemove size={30} /></button>
                             </div>
                           </div>
                         </div>

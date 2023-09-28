@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+// Compoennets
 import App from './App.jsx'
+
+// CSS
 import './index.css'
 
 // Redux setup
@@ -25,5 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <App />
       </Provider>
     </Auth0Provider>,
+
+
   </React.StrictMode>,
 )
